@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Sabka Bazaar" />
+    <meta
+      name="description"
+      content="It is an online grocery delivery service"
+    />
+    <!-- Font-awesome CDN -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Custom Styles- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!--Bootstrap cdn for carousel-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Sabka Bazaar</title>
+  </head>
+
+  <body>
+    <div class="navigationbar">
+      <div class="logo">
+        <a href="index.html">
+          <img
+            class="site-logo"
+            src="./images/logo.png"
+            alt="website logo sabka bazaar"
+        /></a>
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <li><a href="./register.html">Register</a></li>
+          <li><a href="./login.html">Login</a></li>
+        </ul>
+      </nav>
+
+      <a class="shopping-cart" href="#">
+        <i id="shopping-cart-image" class="fas fa-shopping-cart fa-lg"></i>
+        <span class="cart-items">0 items</span>
+      </a>
+    </div>
+
+    <!--Carousel slider-->
+    <div class="container">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+        <!--Slides wrapper-->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img
+              class="independence-day-sale-shampoo banner-image"
+              src="./images/offers/offer1.jpg"
+              alt="Independence Day Deal - 25% off on shampoo"
+            />
+          </div>
+
+          <div class="item">
+            <img
+              class="independence-day-sale-surf banner-image"
+              src="./images/offers/offer2.jpg"
+              alt="Independence Day Deal - Rs120 off on surf"
+            />
+          </div>
+
+          <div class="item">
+            <img
+              class="independence-day-sale-cleaner banner-image"
+              src="./images/offers/offer3.jpg"
+              alt="Independence Day Deal - Rs99 off on domex"
+            />
+          </div>
+
+          <div class="item">
+            <img
+              class="independence-day-sale-moisturizer banner-image"
+              src="./images/offers/offer4.jpg"
+              alt="Independence Day Deal - Rs99 off on bodywash"
+            />
+          </div>
+
+          <div class="item">
+            <img
+              class="independence-day-sale-moisturizer banner-image"
+              src="./images/offers/offer5.jpg"
+              alt="Independence Day Deal - Rs99 off on bodywash"
+            />
+          </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <!--Carousel ending-->
+
+    <!--Home Table-->
+
+    <main class="home-table">
+      <section class="home-items">
+        <img
+          src="./images/category/fruits.png"
+          class="image"
+          alt="A variety of fresh fruits and vegetables."
+        />
+        <div class="text">
+          <h2>Fruits & Vegetables</h2>
+          <p>A variety of fresh fruits and vegetables</p>
+          <button
+            class="button categories-fruits-content-button categories-common-content-button product-category-button"
+            type="button"
+            value="5b6899953d1a866534f516e2"
+          >
+            Explore fruit-and-veg
+          </button>
+        </div>
+      </section>
+
+      <section class="home-items">
+        <div id="text">
+          <h2>Bakery Cakes and Dairy</h2>
+          <p>The best cupcakes, cookies, cakes, fresh bread</p>
+          <button
+            class="button categories-bakery-content-button product-category-button"
+            type="button"
+            value="5b6899123d1a866534f516de"
+          >
+            Explore bakery-cakes-dairy
+          </button>
+        </div>
+        <img
+          class="image"
+          src="./images/category/bakery.png"
+          alt="A variety of fresh fruits and vegetables."
+        />
+      </section>
+
+      <section class="home-items">
+        <img
+          src="./images/category/beverages.png"
+          alt="A variety of fresh fruits and vegetables."
+        />
+        <div class="text">
+          <h2>Beverages</h2>
+          <p>
+            Our beverage department will ensure your fridge is always fully
+            stocked.
+          </p>
+          <button
+            class="button categories-beverages-content-button categories-common-content-button product-category-button"
+            type="button"
+            value="5b675e5e5936635728f9fc30"
+          >
+            Explore beverages
+          </button>
+        </div>
+      </section>
+
+      <section class="home-items">
+        <div class="text">
+          <h2>Beauty and Hygiene</h2>
+          <p>
+            Buy beauty and personal care products online in India at best
+            prices.
+          </p>
+          <button
+            class="button categories-beauty-content-button product-category-button"
+            type="button"
+            value="5b68994e3d1a866534f516df"
+          >
+            Explore beauty-hygiene
+          </button>
+        </div>
+        <img
+          class="image"
+          src="./images/category/beauty.png"
+          alt="A variety of fresh fruits and vegetables."
+        />
+      </section>
+
+      <section class="home-items">
+        <img
+          class="image"
+          src="./images/category/baby.png"
+          alt="A variety of fresh fruits and vegetables."
+        />
+        <div class="text">
+          <h2>Baby Care</h2>
+          <p>Shop online for Baby Products</p>
+          <button
+            class="button categories-baby-content-button categories-common-content-button product-category-button"
+            type="button"
+            value="5b6899683d1a866534f516e0"
+          >
+            Explore Baby
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Starting -->
+    <footer class="footer">
+      <p>Copyright &copy; 2021 Sabka Bazaar Grocery Suplies Pvt. Ltd</p>
+    </footer>
+    <!-- Footer Ending -->
+
+    <div id="my-modal" class="modalCart">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>My Cart</h2>
+        </div>
+        <div class="modal-body">
+          <div class="model-content">
+            <img
+              class="cart-lowest-price"
+              src="../images/lowest-price.png"
+              alt="Lowest price"
+            />
+            <p class="modal-content-heading">
+              You won't find it cheaper anywhere
+            </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <h3>Proceed to checkout</h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/changeProductCategory.js"></script>
+    <script src="./js/openModal.js"></script>
+    <script src="./js/cart-number.js"></script>
+    <script src="./js/cart.js"></script>
+  </body>
+</html>
